@@ -31,3 +31,19 @@ chackPalindrome('ДовОд'); // true
 chackPalindrome('Кекс'); // false
 // Это палиндром
 chackPalindrome('Лёша на полке клопа нашёл '); // true
+
+
+//Функция принимает строку, извлекает содержащиеся в ней цифры от 0 до 9 и возвращает их в виде целого положительного числа.
+// Если в строке нет ни одной цифры, функция должна вернуть NaN:
+
+
+const filterInt = (string = '') => Math.abs(parseInt(string.replace(/\D+/g, ''), 10));
+
+filterInt ('2023 год');// 2023
+filterInt('ECMAScript 2022'); // 2022
+filterInt('1 кефир, 0.5 батона'); // 105
+filterInt('агент 007'); // 7
+filterInt('а я томат');// NaN
+filterInt(2023); // 2023
+filterInt(-1); // 1
+filterInt(1.5);// 15*/
